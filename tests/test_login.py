@@ -6,18 +6,24 @@ def test_login_with_valid_credentials():
     CT-LOGIN-001 - Login com credenciais válidas
 
     Objetivo:
-    Validar que o usuário consegue realizar login com dados válidos.
+    Validar que o usuário consegue realizar login com credenciais válidas.
     """
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        # Passo 1: acessar a página de login
-        page.goto("https://example.com")
+        # Acessar página de login
+        page.goto("https://www.saucedemo.com/")
 
-        # Passos abaixo simulam um login de exemplo
-        # (serão adaptados para um site real de treino)
-        assert "Example Domain" in page.title()
+        # Preencher credenciais válidas
+        page.fill("#user-name", "standard_user")
+        page.fill("#password", "secret_sauce")
+
+        # Clicar no botão de login
+        page.click("#login-button")
+
+        # Validar redirecionamento para a página de produtos
+        assert "/inventory.html" in page.url
 
         browser.close()
