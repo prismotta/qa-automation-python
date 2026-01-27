@@ -1,0 +1,9 @@
+# Pytest
+.pytest_cache/
+
+# Python
+__pycache__/
+*/__pycache__/
+
+# Test reports
+report.html
