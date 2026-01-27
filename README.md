@@ -1,30 +1,40 @@
 # QA Automation with Python
 
-Este repositório faz parte do meu processo de aprendizado e evolução na área de **Qualidade de Software (QA)**, com foco em **automação de testes utilizando Python**.
+Este repositório faz parte do meu processo de evolução na área de **Qualidade de Software (QA)**, com foco em **automação de testes end-to-end utilizando Python e Playwright**.
+
+O projeto demonstra a transição de **testes manuais** para **testes automatizados**, mantendo alinhamento e rastreabilidade entre os cenários documentados e a automação implementada.
+
+---
 
 ## Objetivo do projeto
-O objetivo deste projeto é aplicar, na prática, os conceitos estudados em QA, como:
-- Entendimento de requisitos
-- Criação de cenários de teste
-- Estruturação de testes automatizados
-- Evolução gradual para automação de testes end-to-end
+Aplicar, na prática, conceitos fundamentais de QA, como:
+- Análise e criação de casos de teste
+- Automação de testes end-to-end
+- Organização e manutenção de testes automatizados
+- Aplicação de boas práticas de automação com Page Object Model
 
-Este repositório representa minha transição dos testes manuais para os testes automatizados.
+---
 
-## Conexão com outros repositórios
-Este projeto está diretamente relacionado ao repositório **qa-test-cases**, onde estão documentados os casos de teste manuais.
+## Aplicação utilizada para testes
+Os testes automatizados são executados sobre o site de treino **SauceDemo**, amplamente utilizado para aprendizado e prática de automação de testes.
 
-Os cenários definidos nos testes manuais servem como base para o desenvolvimento dos testes automatizados neste repositório, garantindo alinhamento entre teste manual e automação.
+Fluxos automatizados:
+- Login
+- Adição de produto ao carrinho
+- Finalização do checkout
 
-## Tecnologias utilizadas
-- Python
-- Pytest
-- Playwright (em fase de aprendizado e implementação)
+---
 
-## Próximos passos
-- Implementar testes automatizados end-to-end utilizando Playwright com Python
-- Automatizar cenários previamente definidos nos testes manuais
-- Aprimorar a organização e a estrutura do projeto seguindo boas práticas de QA
+## Estrutura do projeto
 
-## Status do projeto
-Projeto em desenvolvimento, com foco em aprendizado contínuo e evolução profissional na área de QA.
+```text
+qa-automation-python/
+├── pages/
+│   ├── login_page.py
+│   ├── inventory_page.py
+│   └── checkout_page.py
+├── tests/
+│   ├── test_login.py
+│   ├── test_cart.py
+│   └── test_checkout.py
+└── README.md
