@@ -1,3 +1,5 @@
+[![Python Tests](https://github.com/prismotta/qa-automation-python/actions/workflows/python.yml/badge.svg)](https://github.com/prismotta/qa-automation-python/actions)
+
 # QA Automation with Python
 
 Este repositório faz parte do meu processo de evolução na área de **Qualidade de Software (QA)**, com foco em **automação de testes end-to-end utilizando Python e Playwright**.
