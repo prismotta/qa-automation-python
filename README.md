@@ -17,6 +17,7 @@ Projeto de automação E2E utilizando Python + Playwright + Pytest, aplicando Pa
 
 ## Estrutura do Projeto
 
+```
 qa-automation-python/
 ├── pages/
 │   ├── login_page.py
@@ -29,8 +30,7 @@ qa-automation-python/
 ├── conftest.py
 ├── requirements.txt
 └── README.md
-
----
+```
 
 ## Como Executar Localmente
 
