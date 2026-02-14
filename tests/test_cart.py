@@ -1,6 +1,10 @@
+import pytest
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
+
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_add_item_to_cart(page):
     """
     Caso de teste manual relacionado:
