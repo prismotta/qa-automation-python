@@ -1,6 +1,8 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
+import pytest
 
+@pytest.mark.smoke
 def test_add_item_to_cart(page):
     """
     Caso de teste manual relacionado:

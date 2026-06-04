@@ -1,7 +1,9 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.checkout_page import CheckoutPage
+import pytest
 
+@pytest.mark.regression
 def test_checkout_success(page):
     """
     Caso de teste manual relacionado:

@@ -27,5 +27,10 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install --with-deps
 
-      - name: Run tests
-        run: pytest
+      - name: Run smoke tests on PR
+        if: github.event_name == 'pull_request'
+        run: pytest -m smoke
+
+      - name: Run full regression on main
+        if: github.ref == 'refs/heads/main'
+        run: pytest -m regression
